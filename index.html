@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-principal">
+        <input id="tela-mostrar" disabled></input>
+        <br><br>
+        <div class="linha0">
+            <button class="CE" onclick="apagar()">CE</button>
+            <button class="x" onclick="valorEscolhido('*')">x</button>
+        </div><br>
+        <div class="linha1">
+            <button onclick="valorEscolhido('1')">1</button>
+            <button onclick="valorEscolhido('2')">2</button>
+            <button onclick="valorEscolhido('3')">3</button>
+            <button onclick="valorEscolhido('+')">+</button>
+        </div><br>
+        <div class="linha2">
+            <button onclick="valorEscolhido('4')">4</button>
+            <button onclick="valorEscolhido('5')">5</button>
+            <button onclick="valorEscolhido('6')">6</button>
+            <button onclick="valorEscolhido('-')">-</button>
+        </div><br>
+        <div class="linha3">
+            <button onclick="valorEscolhido('7')">7</button>
+            <button onclick="valorEscolhido('8')">8</button>
+            <button onclick="valorEscolhido('9')">9</button>
+            <button onclick="valorEscolhido('/')">÷</button>
+        </div><br>
+        
+        <div class="linha4">
+            <button class="zero"  onclick="valorEscolhido('0')">0</button>
+            <button class="virgula"  onclick="valorEscolhido('.')">,</button>
+            <button class="equal"  onclick="calcular()">=</button>
+        </div>
+    </div>
+
+
+    <script>
+        function valorEscolhido(valor)
+        {
+            document.getElementById('tela-mostrar').value += valor;
+        }
+        function calcular(){
+            try{
+                document.getElementById('tela-mostrar').value = eval(document.getElementById('tela-mostrar').value);
+            }catch{
+                document.getElementById('tela-mostrar').value = 'Erro';
+            } 
+        }
+        function apagar(){
+            document.getElementById('tela-mostrar').value = '';
+        }
+    </script>
+</body>
+</html>

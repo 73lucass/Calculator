@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..700&display=swap');
+
+body {
+    background-image: linear-gradient(to right, rgb(146, 146, 146), rgb(65, 93, 102), rgb(50, 61, 73));
+}
+
+.container-principal {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 28px;
+    width: 320px;
+    height: 580px;
+    padding: 23px;
+    background-color: rgb(75, 75, 75);
+    box-shadow: 0px 4px 8px rgb(95, 103, 105);
+}
+
+#tela-mostrar {
+    border: 1px solid #d7e6e7;
+    width: 310px;
+    height: 80px;
+    border-radius: 15px;
+    font-size: 40px;
+    background-color: #e3eced;
+    color: #242424;
+    margin-top: 4px;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 500;
+}
+
+.linha0,
+.linha1,
+.linha2,
+.linha3,
+.linha4 {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.linha1>button,
+.linha2>button,
+.linha3>button {
+    width: 70px;
+    height: 70px;
+    border-radius: 15px;
+    background-color: #d2e5e9;
+    font-size: 28px;
+    border: 1px solid #d2e5e9;
+    transition: 0.3s;
+}
+
+.linha1>button:hover,
+.linha2>button:hover,
+.linha3>button:hover {
+    background-color: #b3bfc0;
+    transition: 0.3s;
+
+}
+
+.equal {
+    width: 147px;
+    height: 70px;
+    background-color: orchid;
+    border-radius: 10px;
+    font-size: 30px;
+    background-color: #293239;
+    color: white;
+    border: 1px solid #293239;
+    transition: 0.3s;
+}
+
+.equal:hover,
+.CE:hover {
+    background-color: #3e464d;
+    transition: 0.3s;
+    border: 1px solid #3e464d;
+}
+
+.zero,
+.virgula,
+.x {
+    width: 70px;
+    height: 70px;
+    border-radius: 15px;
+    background-color: #d2e5e9;
+    font-size: 28px;
+    border: 1px solid #d2e5e9;
+    transition: 0.3s;
+}
+
+.zero:hover,
+.virgula:hover,
+.x:hover {
+    transition: 0.3s;
+    background-color: #b3bfc0;
+    border: 1px solid #b3bfc0;
+}
+
+.CE {
+    font-size: 25px;
+    width: 228px;
+    height: 70px;
+    background-color: #293239;
+    border-radius: 10px;
+    color: white;
+    border: 1px solid #293239;
+    transition: 0.3s;
+}
