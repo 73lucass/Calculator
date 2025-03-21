@@ -30,11 +30,7 @@ body {
     font-weight: 500;
 }
 
-.linha0,
-.linha1,
-.linha2,
-.linha3,
-.linha4 {
+.linha0, .linha1, .linha2, .linha3, .linha4 {
     display: flex;
     justify-content: space-around;
     margin-top: 10px;
@@ -56,6 +52,7 @@ body {
 .linha2>button:hover,
 .linha3>button:hover {
     background-color: #b3bfc0;
+    border: 1px solid #b3bfc0;
     transition: 0.3s;
 
 }
@@ -79,9 +76,7 @@ body {
     border: 1px solid #3e464d;
 }
 
-.zero,
-.virgula,
-.x {
+.zero, .virgula, .x {
     width: 70px;
     height: 70px;
     border-radius: 15px;
@@ -91,9 +86,7 @@ body {
     transition: 0.3s;
 }
 
-.zero:hover,
-.virgula:hover,
-.x:hover {
+.zero:hover, .virgula:hover, .x:hover {
     transition: 0.3s;
     background-color: #b3bfc0;
     border: 1px solid #b3bfc0;
