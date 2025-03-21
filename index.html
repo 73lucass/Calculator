@@ -43,16 +43,19 @@
 
 
     <script>
-        function valorEscolhido(valor)
-        {
-            document.getElementById('tela-mostrar').value += valor;
+        function valorEscolhido(valor){
+            let valorNaTela=document.getElementById('tela-mostrar')
+            if(valorNaTela.value === 'Erro'){
+                valorNaTela.value = '';
+            }
+            valorNaTela.value += valor;
         }
         function calcular(){
             try{
                 document.getElementById('tela-mostrar').value = eval(document.getElementById('tela-mostrar').value);
             }catch{
                 document.getElementById('tela-mostrar').value = 'Erro';
-            } 
+            }
         }
         function apagar(){
             document.getElementById('tela-mostrar').value = '';
